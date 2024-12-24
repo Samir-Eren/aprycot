@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #ccc;
+}
+
+.container {
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  background: #fff;
+}
+
+aside {
+  width: 120px;
+}
+
+.sidebar_head {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidebar_head > div {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  font-size: 48px;
+  position: relative;
+  background: #ea6a1252;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar_head > div > img {
+  width: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+
+main {
+  background-color: rgb(248, 245, 242);
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar_body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.sidebar_body > a {
+  border-radius: 50%;
+  padding: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  height: 80px;
+  border-left: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: #fff;
+  position: sticky;
+  z-index: 20;
+  top: 0;
+}
+
+header > label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #c1c1c1;
+  border-radius: 20px;
+}
+
+header > label > img {
+  width: 25px;
+}
+
+header > label > input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.header_item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header_item > a > img {
+  width: 30px;
+  height: 30px;
+}
+
+.header_item > a > .odamcha {
+  background-color: antiquewhite;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.hero_section {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  gap: 40px;
+}
+
+.hero {
+  padding: 40px;
+}
+
+.hero_left {
+  border-radius: 20px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  gap: 25px;
+  width: 65%;
+  height: 390px;
+  background-image: url("./img/1-rasm.jpg");
+}
+
+.span1 {
+  color: #ea6a12;
+}
+
+.hero_left > button {
+  border: none;
+  border-radius: 50px;
+  background-color: #ea6a12;
+  color: #fff;
+  width: 180px;
+  height: 50px;
+}
+
+.hero_right {
+  width: 35%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+}
+
+.hero_right > img {
+  width: 200px;
+  scale: 2.2;
+  transform: translateY(-15px);
+}
+
+.hero_right > h1 {
+  font-size: 50px;
+}
+
+.menu_kat {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.left {
+  width: 65%;
+}
+
+.tepa {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.ong {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tepa > a {
+  background-color: #ea6a12;
+}
+
+.orta {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.kat_card {
+  background-color: #fff;
+  border-radius: 25px;
+  width: 110px;
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.kat_card > span {
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+
+.kat_card > img {
+  border-radius: 50%;
+}
+
+.pas {
+  display: flex;
+
+  padding: 25px;
+}
+
+.kat_card1 {
+  border-radius: 20px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.dol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kat_card1 > img {
+  width: 120px;
+}
+
+.kat_card1 > .imgg {
+  width: 80px;
+  scale: 1.8;
+  border-radius: 50%;
+  margin: 0 auto;
+  transform: translateY(-40px);
+}
+
+.gap1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.car2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_kat {
+  display: flex;
+}
+
+.right {
+  width: 35%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.kat_rig {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  button {
+    width: auto;
+    margin: auto;
+    padding: 10px 20px;
+    display: inline-flex;
+    background: #ea6a12;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+  }
+}
+
+.my_card {
+  width: 100%;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background-color: #fff5ee;
+  gap: 50px;
+}
+
+.my_card > .pizza {
+  width: 65px;
+  scale: 1.8;
+}
+
+.chapp {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ongg {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.my_card_gap {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+}
+
+.card3 {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.left3 {
+  width: 65%;
+}
+
+.head3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.ong3 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.kat3_1 {
+  border-radius: 20px;
+  width: 270px;
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  gap: 10px;
+}
+
+.kat3_1 > img {
+  width: 120px;
+}
+
+.chapp3 > h3 {
+  font-size: 23px;
+}
+
+.kat3_1 > .chapp3 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dol3 {
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  width: 50px;
+}
+
+.ongg3 {
+  display: flex;
+  align-items: center;
+  transform: translateX(45px);
+}
+
+.ongg3 > img {
+  width: 140px;
+}
+
+.katta {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.big {
+  display: flex;
+  justify-content: space-around;
+  transform: translateX(-50px);
+}
+
+.bigg {
+  display: flex;
+  justify-content: space-around;
+  transform: translateX(-50px);
+}
+
+.right3 {
+  width: 35%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.head_rig3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kat_ongg3 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.button_rig3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.button_rig3 > button {
+  background: none;
+  border: 1px solid #ea6a12;
+  color: #ea6a12;
+  border-radius: 50px;
+  padding: 15px 30px;
+  transition: background .3s ease;
+}
+
+.button_rig3 > button:hover {
+  background: #ea6a12;
+  color: #ffff;
+}
+
+.orta>.kat_card:hover{
+  background: #ea6a12;
+ 
+
+}
+
+.kat_card1:hover{
+  background: #ea6a12;
+  color: #ffff;
+}
+
+.sidebar_body>a:hover{
+  background: #ea6a12;
+}
